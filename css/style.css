@@ -1,0 +1,128 @@
+html {
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.tab-box {
+    width: 750px;
+    height: 48px;
+    margin: left;
+}
+
+.tab-box ul {
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.tab-box li {
+    float: left;
+    list-style-type: none;
+    width: 150px;
+}
+
+.tab-box li a {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    line-height: 3;
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+.tab-box li a:focus,
+.tab-box li a:hover {
+    background-color: rgb(119, 189, 119);
+    color: white;
+}
+
+.tab-box li a.active {
+    background-color: green;
+    color: white;
+}
+
+.panels {
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    clear: both;
+}
+
+article {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 800px;
+    width: 100%;
+    color: black;
+    background-color: white;
+}
+
+.active-panel {
+    z-index: 1;
+}
+
+.hud {
+    z-index: 1;
+    position: absolute;
+    right: 0px;
+    width: 220px;
+    height: 800px;
+    background-color: grey;
+}
+
+.hud table {
+    position: relative;
+    text-align: left;
+    left: 5px;
+}
+
+#minimap {
+    z-index: 1;
+    padding: 10px;
+    margin: 0 auto;
+    color: black;
+    background-color: white;
+}
+
+#map {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+}
+
+#unitFilm {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 3;
+}
+
+#cityFilm {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+}
+
+.button {
+    color: white;
+    width: 220px;
+    right: 5px;
+}
+
+.button:hover {
+    background-color: red;
+}

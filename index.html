@@ -1,7 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>A-B-C-D</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>A civ simulation and a god-game</body>
+<body>
+    <section class="tab-box">
+        <ul>
+            <li><a href="#" class="active">Map</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">Diplomacy</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Ergonomics</a></li>
+            <li><a href="#">Economics</a></li>
+        </ul>
+    </section>
+    <div class="panels">
+        <article class="active-panel">
+            <canvas id="map" width="1800" height="800"></canvas>
+            <canvas id="unitFilm"></canvas>
+            <canvas id="cityFilm"></canvas>
+        </article>
+        <article>
+            science
+        </article>
+        <article>
+            diplomacy
+        </article>
+        <article>
+            news
+        </article>
+        <article>
+            economics
+        </article>
+    </div>
+    <div class="hud">
+        <canvas id="minimap" width="200" height="120"></canvas>
+        <table id="hud-data">
+            <tr>
+                <td>Year:</td>
+                <td id="year"></td>
+            </tr>
+            <tr>
+                <td>Storage:</td>
+                <td id="storage"></td>
+            </tr>
+            <tr>
+                <td>Bank:</td>
+                <td id="bank"></td>
+            </tr>
+            <tr>
+                <td>Happiness:</td>
+                <td id="happy"></td>
+            </tr>
+            <tr>
+                <td>Tax:</td>
+                <td id="tax"></td>
+            </tr>
+            <tr>
+                <td>Budget:</td>
+                <td id="budget"></td>
+            </tr>
+            <tr>
+                <td>Law:</td>
+                <td id="law"></td>
+            </tr>
+            <tr>
+                <td>Pollution:</td>
+                <td id="pollution"></td>
+            </tr>
+            <tr>
+                <td>Loyalty:</td>
+                <td id="loyal"></td>
+            </tr>
+            <tr>
+                <td>Ideology:</td>
+                <td id="idea"></td>
+            </tr>
+        </table>
+        <br> Active unit:
+        <table id="unit-data">
+            <tr>
+                <td>Name:</td>
+                <td id="name"></td>
+            </tr>
+            <tr>
+                <td>Type:</td>
+                <td id="type"></td>
+            </tr>
+            <tr>
+                <td>Movement:</td>
+                <td id="move"></td>
+            </tr>
+            <tr>
+                <td>Power:</td>
+                <td id="pow"></td>
+            </tr>
+            <tr>
+                <td>Life:</td>
+                <td id="life"></td>
+            </tr>
+            <tr>
+                <td>Experience:</td>
+                <td id="exp"></td>
+            </tr>
+        </table>
+        <br>Active city:
+        <table id="city-data">
+            <tr>
+                <td>Name:</td>
+                <td id="cityName"></td>
+            </tr>
+            <tr>
+                <td>Population:</td>
+                <td id="population"></td>
+            </tr>
+            <tr>
+                <td>Income:</td>
+                <td id="income"></td>
+            </tr>
+            <tr>
+                <td>Power:</td>
+                <td id="power"></td>
+            </tr>
+            <tr>
+                <td>Production:</td>
+                <td id="production"></td>
+            </tr>
+            <tr>
+                <td>Happiness:</td>
+                <td id="happy"></td>
+            </tr>
+            <tr>
+                <td>Loyalty:</td>
+                <td id="loyalty"></td>
+            </tr>
+        </table>
+        <div class="button" id="next" onclick="turn.clickNext();">
+            Next Turn!
+        </div>
+        <div class="button" id="Exit" onclick="turn.clickExit();">
+            Exit the game
+        </div>
+    </div>
+</body>
 </html>
