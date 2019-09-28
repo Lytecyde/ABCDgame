@@ -1,0 +1,28 @@
+{
+  "name": "abcdgame",
+  "version": "1.0.0",
+  "description": "a package file for testing out the ABCDgame",
+  "main": "ABCDgame.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Lytecyde@github.com/Lytecyde/ABCDgame.git"
+  },
+  "keywords": [
+    "advancement",
+    "business",
+    "construction",
+    "diplomacy"
+  ],
+  "author": "Mik Seljamaa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lytecyde/ABCDgame/issues"
+  },
+  "homepage": "https://github.com/Lytecyde/ABCDgame#readme"
+}
